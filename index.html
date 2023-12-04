@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" placeholder="0" id="display">
+
+        <div>
+            <button class="allClear" onclick="clearDisplay()">AC</button>
+            <button value="DEL" onclick="deleteLastValue()">DEL</button>
+            <button value="%" onclick="appendTodisplay('%') ">%</button>
+            <button value="/" onclick="appendTodisplay('/') ">/</button>
+        </div>
+
+        <div>
+            <button value="7" onclick="appendTodisplay('7')">7</button>
+            <button value="8" onclick="appendTodisplay('8')">8</button>
+            <button value="9" onclick="appendTodisplay('9')">9</button>
+            <button value="*" onclick="appendTodisplay('*')">*</button>
+        </div>
+        
+        <div>
+            <button value="4" onclick="appendTodisplay('4')">4</button>
+            <button value="5" onclick="appendTodisplay('5')">5</button>
+            <button value="6" onclick="appendTodisplay('6')">6</button>
+            <button value="-" onclick="appendTodisplay('-')">-</button>
+        </div>
+
+        <div>
+            <button value="1" onclick="appendTodisplay('1')">1</button>
+            <button value="2" onclick="appendTodisplay('2')">2</button>
+            <button value="3" onclick="appendTodisplay('3')">3</button>
+            <button value="+" onclick="appendTodisplay('+')">+</button>
+        </div>
+
+        <div>
+            <button value="0" onclick="appendTodisplay('0')">0</button>
+            <button value="00" onclick="appendTodisplay('00')">00</button>
+            <button value="." onclick="appendTodisplay('.')">.</button>
+            <button class="equal" value="=" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
